@@ -3,16 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-async function load<T>(filePath: string): Promise<T> {
-  try {
-    const response = await fetch(filePath);
-    const data = response.json() as T;
-    return data;
-  } catch(error) {
-    throw error;
-  }
-}
-
 function App() {
   const [count, setCount] = useState(0);
 
