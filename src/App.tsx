@@ -34,7 +34,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const stations = await load<Station[]>('./stations_kobe_line.json');
+        const stations = await load<Station[]>('stations_kobe_line.json');
         setStations(stations);
       } catch (err: any) {
         setError(err.message);
