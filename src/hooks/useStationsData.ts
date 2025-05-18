@@ -20,7 +20,7 @@ const useStationsData = () => {
   useEffect(() => {
     async function fetchStations() {
       try {
-        const response = await fetch('src/stations_kobe_line.json'); // public フォルダにあると仮定
+        const response = await fetch('stations_kobe_line.json');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
