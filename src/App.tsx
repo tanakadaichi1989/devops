@@ -76,6 +76,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+    {/*}
      <h2>神戸線</h2>
       {stations.length > 0 ? (
         <>
@@ -88,6 +89,7 @@ function App() {
       ) : (
         <p>No stations data available.</p>
       )}
+    { */ }
     </>
   )
 }
